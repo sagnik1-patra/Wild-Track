@@ -1,0 +1,18 @@
+created: '2025-08-15T15:02:25'
+task: wildlife_reid_baseline_classifier
+data_dir: C:\Users\sagni\Downloads\WildTrack\archive\turtles-data\data
+output_dir: C:\Users\sagni\Downloads\WildTrack
+image_size:
+- 224
+- 224
+batch: 32
+epochs: 3
+backbone: EfficientNetB0
+embed_dim: 256
+num_classes: 437
+training:
+  optimizer: Adam
+  lr: 0.001
+  loss: sparse_categorical_crossentropy
+  metrics:
+  - acc
